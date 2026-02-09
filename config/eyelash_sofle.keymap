@@ -43,7 +43,7 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <50>;
+        tapping-term-ms = <100>;
         hold-trigger-key-positions = <57 0>;
     };
 
@@ -82,11 +82,11 @@
 
         NUMPAD {
             bindings = <
-&kp F13  &kp F14    &kp F15          &kp F16    &kp F17          &kp F18          &kp UP_ARROW     &trans  &trans  &trans  &trans  &trans  &trans
-&kp F19  &kp F20    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp PAGE_UP      &kp DOWN         &trans  &trans  &trans  &trans  &trans  &trans
-&kp F21  &kp F22    &kp KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp HOME         &kp LEFT_ARROW   &trans  &trans  &trans  &trans  &trans  &trans
-&kp F23  &kp F24    &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3        &kp PAGE_DOWN    &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp KP_N0  &kp KP_DOT       &kp RET    &trans           &kp SPACE        &trans           &trans  &trans  &trans  &trans  &trans
+&kp F13  &kp F14    &kp F15          &kp F16    &kp F17          &kp F18          &kp UP_ARROW     &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&kp F19  &kp F20    &kp KP_NUMBER_7  &kp KP_N8  &kp KP_N9        &kp PAGE_UP      &kp DOWN         &trans  &trans  &trans  &trans            &trans             &trans
+&kp F21  &kp F22    &kp KP_NUMBER_4  &kp KP_N5  &kp KP_NUMBER_6  &kp HOME         &kp LEFT_ARROW   &trans  &trans  &trans  &trans            &trans             &trans
+&kp F23  &kp F24    &kp KP_NUMBER_1  &kp KP_N2  &kp KP_N3        &kp PAGE_DOWN    &kp RIGHT_ARROW  &trans  &trans  &trans  &trans            &kp BSLH           &trans
+&trans   &kp KP_N0  &kp KP_DOT       &kp RET    &trans           &kp SPACE        &trans           &trans  &trans  &trans  &trans            &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LEFT_BRACKET RIGHT_BRACKET>;
