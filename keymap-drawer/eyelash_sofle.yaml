@@ -53,13 +53,13 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - MUTE
+  - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: NUMPAD, h: toggle}
   - $$mdi:keyboard-space$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - MUTE
   - $$mdi:keyboard-space$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: FUNCTION, h: toggle}
@@ -265,3 +265,7 @@ combos:
   k: '&soft_off'
 - p: [60, 56]
   k: {t: FUNCTION, h: toggle}
+- p: [1, 56]
+  k: {t: QWERTY, h: toggle}
+- p: [2, 56]
+  k: {t: NUMPAD, h: toggle}
